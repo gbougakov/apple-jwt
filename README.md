@@ -20,7 +20,7 @@ $ npm install -g apple-jwt
 $ apple-jwt COMMAND
 running command...
 $ apple-jwt (-v|--version|version)
-apple-jwt/0.0.0 darwin-x64 node-v10.9.0
+apple-jwt/1.0.0 darwin-x64 node-v10.9.0
 $ apple-jwt --help [COMMAND]
 USAGE
   $ apple-jwt COMMAND
@@ -29,42 +29,9 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`apple-jwt sign`](#apple-jwt-sign)
-* [`apple-jwt ui`](#apple-jwt-ui)
 * [`apple-jwt help [COMMAND]`](#apple-jwt-help-command)
-
-## `apple-jwt sign`
-
-Signs an Apple JWT token
-
-```
-USAGE
-  $ apple-jwt sign KEYPATH ISS [KID]
-
-ARGUMENTS
-  KEYPATH  path to p8 key
-  ISS      Apple Developer Team ID that issued the key
-  KID      Key ID (leave empty to auto-detect)
-
-OPTIONS
-  --exp=exp        [default: 2 days] Validity time expressed in seconds or a string describing a time span (default: "2 days")
-  --origin=origin  Limit token to specified origin (e.g. "https://bygeorgenet.me")
-
-```
-
-_See code: [src/commands/sign.js](https://github.com/gbougakov/apple-jwt/blob/v0.0.0/src/commands/sign.js)_
-
-## `apple-jwt ui`
-
-Starts an interactive signing GUI
-
-```
-USAGE
-  $ apple-jwt ui KEYPATH ISS [KID]
-```
-
-_See code: [src/commands/ui.js](https://github.com/gbougakov/apple-jwt/blob/v0.0.0/src/commands/ui.js)_
-
+* [`apple-jwt sign KEYPATH ISS [KID]`](#apple-jwt-sign-keypath-iss-kid)
+* [`apple-jwt ui`](#apple-jwt-ui)
 
 ## `apple-jwt help [COMMAND]`
 
@@ -82,4 +49,37 @@ OPTIONS
 ```
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v2.1.4/src/commands/help.ts)_
+
+## `apple-jwt sign KEYPATH ISS [KID]`
+
+Signs an Apple JWT token
+
+```
+USAGE
+  $ apple-jwt sign KEYPATH ISS [KID]
+
+ARGUMENTS
+  KEYPATH  path to p8 key
+  ISS      Apple Developer Team ID that issued the key
+  KID      Key ID (leave empty to auto-detect)
+
+OPTIONS
+  --exp=exp        [default: 2 days] Validity time expressed in seconds or a string describing a time span (default: "2
+                   days")
+
+  --origin=origin  Limit token to specified origin (e.g. "https://bygeorgenet.me")
+```
+
+_See code: [src/commands/sign.js](https://github.com/gbougakov/apple-jwt/blob/v1.0.0/src/commands/sign.js)_
+
+## `apple-jwt ui`
+
+Starts interactive signing UI
+
+```
+USAGE
+  $ apple-jwt ui
+```
+
+_See code: [src/commands/ui.js](https://github.com/gbougakov/apple-jwt/blob/v1.0.0/src/commands/ui.js)_
 <!-- commandsstop -->

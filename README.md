@@ -7,7 +7,7 @@ Generate JSON Web Tokens for MusicKit JS and MapKit JS using an intuitive CLI
 [![Version](https://img.shields.io/npm/v/apple-jwt.svg)](https://npmjs.org/package/apple-jwt)
 [![Downloads/week](https://img.shields.io/npm/dw/apple-jwt.svg)](https://npmjs.org/package/apple-jwt)
 [![License](https://img.shields.io/npm/l/apple-jwt.svg)](https://github.com/gbougakov/apple-jwt/blob/master/package.json)
-[![Build Status](https://travis-ci.com/gbougakov/apple-jwt.svg?branch=master)](https://travis-ci.com/gbougakov/apple-jwt)
+[![Build Status](https://travis-ci.org/gbougakov/apple-jwt.svg?branch=master)](https://travis-ci.org/gbougakov/apple-jwt)
 
 <!-- toc -->
 * [Usage](#usage)

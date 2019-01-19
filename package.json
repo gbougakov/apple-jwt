@@ -1,0 +1,53 @@
+{
+  "name": "apple-jwt",
+  "description": "apple-jwt: Generate JSON Web Tokens for MusicKit JS and MapKit JS using an intuitive CLI",
+  "version": "0.0.0",
+  "author": "GeorgeNet @gbougakov",
+  "bin": {
+    "apple-jwt": "./bin/run"
+  },
+  "bugs": "https://github.com/gbougakov/apple-jwt/issues",
+  "dependencies": {
+    "@oclif/command": "^1.5.8",
+    "@oclif/config": "^1.10.4",
+    "@oclif/plugin-help": "^2.1.4",
+    "cli-ux": "^5.0.0",
+    "jsonwebtoken": "^8.4.0"
+  },
+  "devDependencies": {
+    "@oclif/dev-cli": "^1.21.0",
+    "ava": "^1.1.0",
+    "execa": "^1.0.0",
+    "globby": "^8.0.2",
+    "got": "^9.6.0"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "/bin",
+    "/npm-shrinkwrap.json",
+    "/oclif.manifest.json",
+    "/src"
+  ],
+  "homepage": "https://github.com/gbougakov/apple-jwt",
+  "keywords": [
+    "oclif"
+  ],
+  "license": "MIT",
+  "main": "src/index.js",
+  "oclif": {
+    "commands": "./src/commands",
+    "bin": "apple-jwt",
+    "plugins": [
+      "@oclif/plugin-help"
+    ]
+  },
+  "repository": "gbougakov/apple-jwt",
+  "scripts": {
+    "postpack": "rm -f oclif.manifest.json",
+    "prepack": "oclif-dev manifest && oclif-dev readme",
+    "test": "ava",
+    "version": "oclif-dev readme && git add README.md"
+  }
+}

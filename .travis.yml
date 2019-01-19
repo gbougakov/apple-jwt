@@ -3,4 +3,5 @@ node_js:
 - node
 - lts/*
 before_install:
-- 'openssl aes-256-cbc -K $encrypted_619a450f3ff6_key -iv $encrypted_619a450f3ff6_iv -in AuthKey_QN9TMNHK76.p8.enc -out AuthKey_QN9TMNHK76.p8 -d'
+- 'mkdir donotcommit'
+- 'openssl aes-256-cbc -K $encrypted_619a450f3ff6_key -iv $encrypted_619a450f3ff6_iv -in AuthKey_QN9TMNHK76.p8.enc -out donotcommit/AuthKey_QN9TMNHK76.p8 -d'

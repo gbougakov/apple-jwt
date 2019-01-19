@@ -29,9 +29,9 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`apple-jwt sign`](#`apple-jwt-sign`)
-* [`apple-jwt ui`](#`apple-jwt-ui`)
-* [`apple-jwt help [COMMAND]`](#`apple-jwt-help-[command]`)
+* [`apple-jwt sign`](#apple-jwt-sign)
+* [`apple-jwt ui`](#apple-jwt-ui)
+* [`apple-jwt help [COMMAND]`](#apple-jwt-help-command)
 
 ## `apple-jwt sign`
 

@@ -20,7 +20,7 @@ $ npm install -g apple-jwt
 $ apple-jwt COMMAND
 running command...
 $ apple-jwt (-v|--version|version)
-apple-jwt/1.0.1 darwin-x64 node-v10.9.0
+apple-jwt/1.0.2 darwin-x64 node-v10.9.0
 $ apple-jwt --help [COMMAND]
 USAGE
   $ apple-jwt COMMAND
@@ -70,7 +70,7 @@ OPTIONS
   --origin=origin  Limit token to specified origin (e.g. "https://bygeorgenet.me")
 ```
 
-_See code: [src/commands/sign.js](https://github.com/gbougakov/apple-jwt/blob/v1.0.1/src/commands/sign.js)_
+_See code: [src/commands/sign.js](https://github.com/gbougakov/apple-jwt/blob/v1.0.2/src/commands/sign.js)_
 
 ## `apple-jwt ui`
 
@@ -81,5 +81,5 @@ USAGE
   $ apple-jwt ui
 ```
 
-_See code: [src/commands/ui.js](https://github.com/gbougakov/apple-jwt/blob/v1.0.1/src/commands/ui.js)_
+_See code: [src/commands/ui.js](https://github.com/gbougakov/apple-jwt/blob/v1.0.2/src/commands/ui.js)_
 <!-- commandsstop -->

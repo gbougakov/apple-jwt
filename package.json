@@ -1,7 +1,7 @@
 {
   "name": "apple-jwt",
   "description": "apple-jwt: Generate JSON Web Tokens for MusicKit JS and MapKit JS using an intuitive CLI",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "GeorgeNet @gbougakov",
   "bin": {
     "apple-jwt": "./bin/run"

@@ -7,7 +7,7 @@ test('with all options', async t => {
   const {stdout} = await execa('./bin/run', ['sign', 'donotcommit/AuthKey_QN9TMNHK76.p8', 'Z8V87TZ5G7', 'QN9TMNHK76'])
   const response = await got('https://api.music.apple.com/v1/catalog/us/search?term=monstercat', {
     headers: {
-      "authorization": "Bearer " + stdout
+      authorization: 'Bearer ' + stdout
     }
   })
   t.true(response.statusCode === 200, 'response code is not 200. Either token is invalid or Apple Music API is down')
@@ -22,7 +22,7 @@ test('with key id omitted', async t => {
 
   const response = await got('https://api.music.apple.com/v1/catalog/us/search?term=monstercat', {
     headers: {
-      "authorization": "Bearer " + stdout
+      authorization: 'Bearer ' + stdout
     }
   })
   t.true(response.statusCode === 200, 'response code is not 200. Either token is invalid or Apple Music API is down')

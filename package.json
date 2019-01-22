@@ -19,7 +19,8 @@
     "ava": "^1.1.0",
     "execa": "^1.0.0",
     "globby": "^8.0.2",
-    "got": "^9.6.0"
+    "got": "^9.6.0",
+    "xo": "^0.24.0"
   },
   "engines": {
     "node": ">=8.0.0"
@@ -47,7 +48,11 @@
   "scripts": {
     "postpack": "rm -f oclif.manifest.json",
     "prepack": "oclif-dev manifest && oclif-dev readme",
-    "test": "ava",
+    "test": "ava && xo",
     "version": "oclif-dev readme && git add README.md"
+  },
+  "xo": {
+    "space": true,
+    "semicolon": false
   }
 }

@@ -3,5 +3,9 @@ node_js:
 - node
 - lts/*
 before_install:
-- 'mkdir donotcommit'
-- 'openssl aes-256-cbc -K $encrypted_619a450f3ff6_key -iv $encrypted_619a450f3ff6_iv -in AuthKey_QN9TMNHK76.p8.enc -out donotcommit/AuthKey_QN9TMNHK76.p8 -d'
+- mkdir donotcommit
+- openssl aes-256-cbc -K $encrypted_619a450f3ff6_key -iv $encrypted_619a450f3ff6_iv
+  -in AuthKey_QN9TMNHK76.p8.enc -out donotcommit/AuthKey_QN9TMNHK76.p8 -d
+notifications:
+  slack:
+    secure: o87bGvgotBhwyPrdW6QAHXL2bgD58z1umhrNDyxzdC0pS/IADJ3RcdTHok36dhz2C7yOLv2WGjP6CjvAH0lkpjfbg611B1s8DZeOkAQDfzZ5tnG2GfVBI+eTHEm81w8rQt4COaH1FxlpVCxXCjc4Dqa/Sp9/7wRZSSLpUmeYiUWRBTjouB7QyLb9IPc5DEbIJtNBqqBtztedA+foS1thOfcOcK8Kqqb+TyI4NzGsJK/xYyMqSvq7bq5o3OPT94/b8v19WTcubxyZupxz5bupaDa5LVRSVVzW+no3LTodFM8ZFAostZi8HgD6u1tbJk3TPwe6oPzi23GwArBw01psnuEvlBwDeTH6RpfmAmhxl+z3Fw3BtDfQcJWJEAerM724Rs+Hg6hVvnhRy2YQTW1BhBZcGIhF3bBTlz4WIT2cmaOT9u64qAWGTv6gpdBp07c6JSwvSxEBQpCvJGt/nAvf5/EsNrle7gxxCT/BE/Td12FDODu+SI+YE8JxKtK+kBrG8MIRvJbu4AHLSu/AEdlhKk1nD3CVlLkbig6AJoLQKoo0y5f909w3nn/1zBaQ/P1clSswj7Nfaobg9rljySLd+DzcCgHAXMkt5J8qvShKL95iNzbB6qQY0QtOxycTE32IIGAW1R8asRGHdX38+IqZw4roxtn6DoNsZJivralygUU=

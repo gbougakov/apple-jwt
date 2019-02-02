@@ -8,6 +8,7 @@ Generate JSON Web Tokens for MusicKit JS and MapKit JS using an intuitive CLI
 [![Downloads/week](https://img.shields.io/npm/dw/apple-jwt.svg)](https://npmjs.org/package/apple-jwt)
 [![License](https://img.shields.io/npm/l/apple-jwt.svg)](https://github.com/gbougakov/apple-jwt/blob/master/package.json)
 [![Build Status](https://travis-ci.org/gbougakov/apple-jwt.svg?branch=master)](https://travis-ci.org/gbougakov/apple-jwt)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fgbougakov%2Fapple-jwt.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fgbougakov%2Fapple-jwt?ref=badge_shield)
 
 <!-- toc -->
 * [Usage](#usage)
@@ -83,3 +84,7 @@ USAGE
 
 _See code: [src/commands/ui.js](https://github.com/gbougakov/apple-jwt/blob/v1.0.2/src/commands/ui.js)_
 <!-- commandsstop -->
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fgbougakov%2Fapple-jwt.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fgbougakov%2Fapple-jwt?ref=badge_large)
